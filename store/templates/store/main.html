@@ -10,43 +10,30 @@
 
     <body>
         <!--- Navbar --->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:mediumpurple;">
             <!--- App Title--->
-            <a class="navbar-brand" href="{% url 'store' %}"><h2> STORE </h2></a>
-
+            <a class="navbar-brand display-4" href="{% url 'store' %}"><h2>The Store</h2></a>
 
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-        
+            </button>        
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'store' %}"> Home <span class="sr-only">(current)</span></a>
-                  </li>
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'about' %}"> About <span class="sr-only">(current)</span></a>
-                </li>
-                
-
+                    <li class="nav-item active">
+                        <a class="nav-link " href="{% url 'about' %}"> About <span class="sr-only">(current)</span></a>
+                    </li>             
                 </ul>
 
                 <div class="form-inline my-2 my-lg-0">
-                 	<a href="#"class="btn btn-warning">Login</a>
-                 	<a href="{% url 'cart' %}">
-                		<img class="thumbnail-cart" id="cart-icon" src="{% static 'images/cart.png' %}" />
-                	</a>
-                    
-                    <p id="cart-total">0</p> 
+                    <a href="{% url 'cart' %}">
+                        <img class="thumbnail-cart" id="cart-icon" src="{% static 'images/cart.png' %}" />
+                    </a>
+                 	<a href="#"class="btn btn-warning">Login</a>               
                 </div>
             </div>
         </nav>
-
-        <hr>
 
         <!-- Django Code -->
         <div class="container">
