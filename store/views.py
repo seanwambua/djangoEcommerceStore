@@ -1,8 +1,11 @@
 from django.shortcuts import render
+from .models import Item
 
 
 def store(request):
-    context = {}
+    context = {
+        'items':Item.objects.all()
+    }
     return render(request, 'store/store.html', context)
 
 
