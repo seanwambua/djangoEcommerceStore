@@ -1,1 +1,1 @@
-web: gunicorn djangoEcommerceStore.wsgi
+web: python start.py --port %PORT%
