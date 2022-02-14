@@ -1,5 +1,3 @@
-.{
-	background: black;
-	text-decoration-color: !important;
-	color: whitesmoke;
+body {
+	color: red;
 }
