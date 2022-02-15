@@ -1,1 +1,1 @@
-web: python start.py --port %PORT%
+web: gunicorn eshop.wsgi

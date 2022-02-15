@@ -1,5 +1,5 @@
 from pathlib import Path
-import os
+import os, django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -162,3 +162,6 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+
+# Activate Django-heroku.
+django_heroku.settings(locals())
