@@ -14,7 +14,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e7%o+dw6=8b!iphsh0&*@r$rga1zdlf(^7gwk6%=5^@e643kb@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = [False]
+DEBUG = [True]
 
 ALLOWED_HOSTS = ['pythondjango-ecommerce-project.herokuapp.com/', '127.0.0.1']
 
@@ -38,10 +38,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.eventbrite',
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.instagram',
-
-
     'store.apps.StoreConfig',
-    #'store',
+    'store',
 ]
 
 
@@ -167,4 +165,4 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 # Activate Django-heroku.
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
